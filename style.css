@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+body {
+    margin: 0;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgb(1, 88, 1);
+    border-top-left-radius: 100%;
+}
+
+.green:hover{
+    transform: scale(103%);
+    transition: 50ms linear; 
+}
+
+.red:hover{
+    transform: scale(103%);
+    transition: 50ms linear; 
+}
+
+.yellow:hover{
+    transform: scale(103%);
+    transition: 50ms linear; 
+}
+
+.blue:hover{
+    transform: scale(103%);
+    transition: 50ms linear; 
+}
+
+.selected {
+    animation: fade normal;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.selected {
+    animation-name: example;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+  .box {
+    background-image: -webkit-linear-gradient(white 50%, black 50%);
+    background-repeat: repeat;
+    background-position: 0;
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+  }
+  
+  @-webkit-keyframes stripes {
+    100% {
+      background-position: 0 -50px;
+    }
+  }
+  
+  @keyframes stripes {
+    100% {
+      background-position: 0 -50px;
+    }
+  }
+  /* Other stuff */
+  .box{
+    overflow: hidden;
+    background: #000;
+    color: #FFF;
+  }
+  
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 26vmax/.8 Open Sans, Impact;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
