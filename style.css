@@ -91,7 +91,7 @@ body {
     to {opacity: 1;}
   }
 
-
+/*
   .box {
     background-image: -webkit-linear-gradient(white 50%, black 50%);
     background-repeat: repeat;
@@ -114,6 +114,7 @@ body {
     }
   }
   /* Other stuff */
+  /*
   .box{
     overflow: hidden;
     background: #000;
@@ -131,4 +132,6 @@ body {
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-  }
+  } */
+
+  
