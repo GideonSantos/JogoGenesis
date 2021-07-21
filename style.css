@@ -1,27 +1,28 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 
-body {
+*{
     margin: 0;
 }
 
+
 .main-game {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .genius {
     display: grid;
     grid-template-areas: 'verde vermelho'
     'amarelo azul';
-    grid-gap: 10px;
+    grid-gap: 8px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
     border-radius: 100%;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
 }
 
 .blue {
@@ -91,47 +92,36 @@ body {
     to {opacity: 1;}
   }
 
-/*
+
   .box {
-    background-image: -webkit-linear-gradient(white 50%, black 50%);
-    background-repeat: repeat;
-    background-position: 0;
+    background-image: url('./JogoGenesis/estelar.gif');
     background-size: 100% 50px;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: stripes 2s linear infinite;
-    animation: stripes 2s linear infinite;
-  }
-  
-  @-webkit-keyframes stripes {
-    100% {
-      background-position: 0 -50px;
-    }
-  }
-  
-  @keyframes stripes {
-    100% {
-      background-position: 0 -50px;
-    }
-  }
-  /* Other stuff */
-  /*
-  .box{
-    overflow: hidden;
-    background: #000;
-    color: #FFF;
+   
   }
   
   .box {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     white-space: nowrap;
     text-align: center;
     text-transform: uppercase;
-    font: bold 26vmax/.8 Open Sans, Impact;
+    font: bold 5vmax/.8 Open Sans, Impact;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   } */
 
-  
+  h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+
+  }
+
+.fill{   
+    background-image: url('/JogoGenesis/image-cores.gif');
+    -webkit-background-clip: text; /*Insere o item texto para o parâmetro transparente abaixo*/ 
+    -webkit-text-fill-color: transparent;
+
+}
